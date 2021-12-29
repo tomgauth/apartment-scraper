@@ -11,7 +11,7 @@ def main():
     airtable_api = view.set_airtable_api()
     airtable_base = view.set_airtable_base()
     config_name = view.set_config_name()
-    settings = Settings()
+    settings = Settings(airtable_api, airtable_base)
     listings_table = settings.listings_table
     settings_table = settings.settings_table
     search_query = SearchQuery()   
